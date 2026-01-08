@@ -218,6 +218,7 @@ Use any future expiry date and any 3-digit CVC.
 - Verify MongoDB connection
 
 ### Products not loading?
+- Need to attach your database to run the downloaded version
 - Check MongoDB connection
 - Verify MONGO_URI in `.env`
 - Check backend server logs
