@@ -18,7 +18,8 @@ const ProductCard = ({ product }) => {
           src={product.image} 
           alt={product.name}
           onError={(e) => {
-            e.target.src = 'https://via.placeholder.com/400x400?text=' + encodeURIComponent(product.name);
+    e.target.onerror = null;
+    e.target.src = '/headphones.png';
           }}
         />
       </div>
