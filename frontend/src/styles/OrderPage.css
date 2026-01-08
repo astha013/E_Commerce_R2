@@ -1,0 +1,134 @@
+.orders-page {
+  flex: 1;
+  padding: 2rem;
+  background-color: var(--light-color);
+}
+
+.orders-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.orders-container h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--dark-color);
+}
+
+.no-orders {
+  background: white;
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.no-orders p {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.orders-list {
+  display: grid;
+  gap: 2rem;
+}
+
+.order-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--primary-color);
+}
+
+.order-card.pending {
+  border-left-color: var(--warning-color);
+}
+
+.order-card.failed {
+  border-left-color: var(--danger-color);
+}
+
+.order-card.cancelled {
+  border-left-color: #6b7280;
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.order-id {
+  font-size: 1rem;
+}
+
+.order-status {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.order-status.pending {
+  background-color: var(--warning-color);
+}
+
+.order-status.completed {
+  background-color: var(--success-color);
+}
+
+.order-status.failed {
+  background-color: var(--danger-color);
+}
+
+.order-status.cancelled {
+  background-color: #6b7280;
+}
+
+.order-date {
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+.order-items {
+  margin-bottom: 1rem;
+}
+
+.order-items ul {
+  list-style: none;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+}
+
+.order-items li {
+  padding: 0.25rem 0;
+  color: #6b7280;
+}
+
+.order-total {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .orders-page {
+    padding: 1rem;
+  }
+}
