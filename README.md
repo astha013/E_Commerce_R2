@@ -15,7 +15,7 @@ A full-featured e-commerce checkout system built with the MERN stack (MongoDB, E
 ## Project Structure
 
 ```
-checkout/
+Astha_R2/
 ├── backend/          # Node.js + Express backend
 │   ├── models/      # MongoDB schemas
 │   ├── routes/      # API routes
@@ -37,7 +37,6 @@ checkout/
 
 ## Backend Setup
 
-### Prerequisites
 - Node.js (v14 or higher)
 - MongoDB (local or MongoDB Atlas)
 - Stripe account
@@ -70,29 +69,6 @@ npm run dev
 ```
 
 The backend will run on `http://localhost:5000`
-
-### API Endpoints
-
-#### Products
-- `GET /api/products` - Get all products
-- `GET /api/products/:id` - Get product by ID
-- `POST /api/products` - Create product (for demo)
-
-#### Cart
-- `POST /api/cart/add` - Add item to cart
-- `GET /api/cart/:sessionId` - Get cart
-- `PUT /api/cart/update` - Update item quantity
-- `POST /api/cart/remove` - Remove item from cart
-- `POST /api/cart/clear` - Clear cart
-
-#### Orders
-- `POST /api/orders/create-payment-intent` - Create Stripe payment intent
-- `GET /api/orders/session/:sessionId` - Get orders by session
-- `GET /api/orders/:orderId` - Get order by ID
-- `POST /api/orders/confirm-payment` - Confirm payment
-
-#### Webhook
-- `POST /api/webhook` - Stripe webhook handler
 
 ## Frontend Setup
 
